@@ -355,7 +355,7 @@ document.getElementById('formContacto')?.addEventListener('submit', function(e) 
 */
 
 // ======================
-// Level UP Gamer - JS
+// JS APLICADO AL PROYECTO
 // ======================
 
 // --------- Utilidades ---------
@@ -375,7 +375,7 @@ function mostrarToast(mensaje, tipo = "info", tiempo = 2500) {
   setTimeout(() => toast.remove(), tiempo + 500);
 }
 
-// --------- Catálogo, Carrito, Compra ---------
+// --------- Catalogo, Carrito, Compra ---------
 const productos = [
   {id:"producto1", nombre:"Catan 🎲", precio:29990, img:"assets/image/catan.webp"},
   {id:"producto2", nombre:"Carcassonne 🎲", precio:24990, img:"assets/image/carcassonne.webp"},
@@ -467,7 +467,7 @@ document.getElementById("finalizarCompraBtn").onclick = () => {
   actualizarContadorCarrito();
 };
 
-// --------- Catálogo y Buscador ---------
+// --------- Catalogo y Buscador ---------
 function filtrarCatalogo(busqueda) {
   busqueda = busqueda.toLowerCase();
   document.querySelectorAll("#catalogo .card").forEach(card => {
@@ -634,4 +634,5 @@ document.querySelectorAll('.toggle-password').forEach(btn => {
 });
 
 // --------- Inicialización ---------
+
 actualizarContadorCarrito();
